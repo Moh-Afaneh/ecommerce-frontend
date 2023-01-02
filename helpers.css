@@ -1,0 +1,82 @@
+.primary-button,
+.secondary-button,
+.light-button {
+  font-size: var(--font-small);
+  width: fit-content;
+  height: auto;
+  padding: 0.9em 2em;
+  border-radius: 2em;
+  transition: all 0.2s var(--trans-background-color);
+}
+.primary-button {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+}
+.light-button {
+  background-color: var(--light-bg-color);
+}
+.secondary-button {
+  background-color: var(--secondary-dark-color);
+  color: var(--white-color);
+}
+.light-button:hover {
+  background-color: var(--secondary-dark-color);
+  color: var(--white-color);
+}
+.secondary-button:hover {
+  background-color: var(--light-bg-color);
+  color: var(--secondary-dark-color);
+}
+
+.primary-button:hover {
+  background-color: var(--dark-color);
+}
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 0.938em;
+}
+.column {
+  padding-right: -0.938em;
+  padding-left: -0.938em;
+}
+.column .row {
+  padding: 0 0.938em;
+}
+.flexwrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+.flexcenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.flexitem {
+  display: flex;
+  align-items: center;
+}
+.flexcol {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+.products .media {
+  position: relative;
+  overflow: hidden;
+}
+.object-cover img {
+  position: absolute;
+  width: var(--percentage100);
+  height: var(--percentage100);
+  object-fit: cover;
+
+  display: block;
+}
+.mini-text {
+  font-size: var(--font-small);
+  color: var(--light-text-color);
+}
+/* **********************
+* REUSEABLE SELECTOR
+********************** */
